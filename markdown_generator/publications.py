@@ -10,9 +10,9 @@
 
 # ## Data format
 # 
-# The TSV needs to have the following columns: pub_date, title, venue, excerpt, citation, site_url, and paper_url, with a header at the top. 
+# The TSV needs to have the following columns: pub_date, title, venue, excerpt, citation, site_url, and arxiv_url, with a header at the top. 
 # 
-# - `excerpt` and `paper_url` can be blank, but the others must have values. 
+# - `excerpt` and `arxiv_url` can be blank, but the others must have values. 
 # - `pub_date` must be formatted as YYYY-MM-DD.
 # - `url_slug` will be the descriptive part of the .md file and the permalink URL for the page about the paper. The .md file will be `YYYY-MM-DD-[url_slug].md` and the permalink will be `https://[yourdomain]/publications/YYYY-MM-DD-[url_slug]`
 
@@ -68,6 +68,10 @@ for row, item in publications.iterrows():
     html_filename = str(item.pub_date) + "-" + item.url_slug
     year = item.pub_date[:4]
     
+    if len(str(item.arxiv_id)) > 3:
+        arxiv_url = f"https://arxiv.org/abs/{item.arxiv_id}";
+        arxiv_str = f"arXiv:{item.arxiv_id}";
+
     ## YAML variables
     
     md = "---\ntitle: \""   + item.title + '"\n'
@@ -83,8 +87,10 @@ for row, item in publications.iterrows():
     
     md += "\nvenue: '" + html_escape(item.venue) + "'"
     
-    if len(str(item.paper_url)) > 5:
-        md += "\npaperurl: '" + item.paper_url + "'"
+    if len(str(item.journal_url)) > 5:
+        md += "\npaperurl: '" + item.journal_url + "'"
+    elif len(str(item.arxiv_id)) > 5:
+        md += "\npaperurl: '" + arxiv_url + "'"
     
     md += "\ncitation: '" + html_escape(item.citation) + "'"
     
@@ -92,13 +98,18 @@ for row, item in publications.iterrows():
     
     ## Markdown description for individual page
     
-    if len(str(item.paper_url)) > 5:
-        md += "\n\n<a href='" + item.paper_url + "'>Download paper here</a>\n" 
+    if len(str(item.journal_url)) > 5:
+        md += "\n\n<a href='" + item.journal_url + f"'>Link to {item.venue} entry</a>\n" 
+  
+    if len(str(item.arxiv_id)) > 3:
+        md += "\n\n<a href='" + arxiv_url + f"'>Link to arxiv entry</a>\n" 
+        #md += f"\n\n[{arxiv_str}]({arxiv_url})\n";
         
+  
     if len(str(item.excerpt)) > 5:
         md += "\n" + html_escape(item.excerpt) + "\n"
         
-    md += "\nRecommended citation: " + item.citation
+    #md += "\nRecommended citation: " + item.citation
     
     md_filename = os.path.basename(md_filename)
        
