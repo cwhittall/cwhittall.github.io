@@ -19,10 +19,8 @@ I am interested in topics in gravitational physics, including:
 
 My current research involves the development of frequency-domain methods for calculating the gravitational self-force in hyperbolic binary black hole encounters. My planned thesis title is "Frequency-domain approach to self-force in hyperbolic scattering" and Prof. Leor Barack (primary) and Dr Adam Pound (secondary) are my supervisors. Funding for my project is provided by EPSRC.
 
-
 Education
 ------
-* Sep. 2020 - Present: PhD in Mathematical Sciences, University of Southampton
-* Oct. 2016 - Jun. 2020: BA MMath in Mathematics, University of Cambridge
+* PhD in Mathematical Sciences: University of Southampton, Sep. 2020 - Present.
+* BA MMath in Mathematics: University of Cambridge, Oct. 2016 - Jun. 2020.
  
-

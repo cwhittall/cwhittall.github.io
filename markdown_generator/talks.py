@@ -93,12 +93,15 @@ for row, item in talks.iterrows():
     
     if len(str(item.description)) > 3:
         md += "\n" + html_escape(item.description) + "\n"  
-    
-    if len(str(item.event_url)) > 3:
-        md += "\n[Event information](" + item.event_url + ")\n" 
         
     if len(str(item.slides_url)) > 3:
         md += "\n[Slides](../" + item.slides_url + ")\n";
+
+    if len(str(item.video_url)) > 3:
+        md += "\n[Video (external)](" + item.video_url +")\n";
+
+    if len(str(item.event_url)) > 3:
+        md += "\n[Event information (external)](" + item.event_url + ")\n" 
         
     md_filename = os.path.basename(md_filename)
     #print(md)

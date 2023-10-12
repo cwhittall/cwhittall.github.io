@@ -39,7 +39,7 @@
     {% endif %}
 
         {% if post.collection == 'teaching' %}
-          <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+          <p> {{ post.summary }}</p>
         {% elsif post.collection == 'publications' %}
           <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.date %}
@@ -53,9 +53,9 @@
     {% endif %}
     
     {% if post.citation and post.paperurl %}
-      <p>Citation: {{ post.citation }} <a href="{{ post.paperurl }}">[link]</a></p>
+      <p>Recommended citation: {{ post.citation }} <a href="{{ post.paperurl }}">[link]</a></p>
     {% elsif post.citation %}
-      <p>Citation: {{ post.citation }} </p>
+      <p>Recommended citation: {{ post.citation }} </p>
     {% elsif post.paperurl %}
       <p>Download <a href=" {{ post.paperurl }} "><u>here</u></a></p>
     {% endif %}
