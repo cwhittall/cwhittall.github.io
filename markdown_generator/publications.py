@@ -94,6 +94,8 @@ for row, item in publications.iterrows():
     
     md += "\ncitation: '" + html_escape(item.citation) + "'"
     
+    md += "\nillustration: " + html_escape(item.illustration)
+    
     md += "\n---"
     
     ## Markdown description for individual page
