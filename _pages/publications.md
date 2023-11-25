@@ -25,7 +25,6 @@ author_profile: true
 </style>
 
 
-
 {% include base_path %}
 
 {% for post in site.publications reversed %}
