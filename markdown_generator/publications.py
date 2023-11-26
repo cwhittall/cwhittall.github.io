@@ -94,11 +94,18 @@ for row, item in publications.iterrows():
     
     md += "\ncitation: '" + html_escape(item.citation) + "'"
     
-    md += "\nillustration: " + html_escape(item.illustration)
+    if len(item.illustration) > 3:
+        md += "\nillustration: " + html_escape(item.illustration);
+    
+    if len(item.illustration2) > 3:
+        md += "\nillustration2: " + html_escape(item.illustration2);
     
     md += "\n---"
     
     ## Markdown description for individual page
+    
+    if len(item.illustration) > 3:
+        md += "\n<head>\n<style>\nimg {\n padding-right: 20px; \n}\n </style>\n</head>"
     
     if len(str(item.journal_url)) > 5:
         md += "\n\n<a href='" + item.journal_url + f"'>Link to {item.venue} entry</a>\n" 
@@ -106,12 +113,19 @@ for row, item in publications.iterrows():
     if len(str(item.arxiv_id)) > 3:
         md += "\n\n<a href='" + arxiv_url + f"'>Link to arxiv entry</a>\n" 
         #md += f"\n\n[{arxiv_str}]({arxiv_url})\n";
-        
+      
   
     if len(str(item.excerpt)) > 5:
         md += "\n" + html_escape(item.excerpt) + "\n"
         
     #md += "\nRecommended citation: " + item.citation
+    
+    if len(item.illustration) > 3:
+        md += "\n<div>"
+        md += f"\n<image style=\"float:left\" width=\"360\" height=\"360\" src=\"{item.illustration}\" />"
+        if len(item.illustration2) > 3:
+            md += f"\n<image style=\"float:left\" width=\"360\" height=\"360\" src=\"{item.illustration2}\" />"
+        md += "\n</div>\n"
     
     md_filename = os.path.basename(md_filename)
        
