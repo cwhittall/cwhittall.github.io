@@ -35,7 +35,7 @@ Education
 <div>
 	<image style="float:left" width="75" height="75" src="images/uni_of_soton.jpg" />
 	<div>
-		<b>PhD in Mathematical Sciences:</b><br/>
+		<b>PhD in Mathematical Sciences</b><br/>
 		University of Southampton, Sep. 2020 - Present.
 	</div>
 </div>
@@ -43,7 +43,7 @@ Education
 <div>
 	<image style="float:left" width="75" height="75" src="images/uni_of_cam.jpg" />
 	<div>
-		<b>BA and MMath in Mathematics:</b><br/>
+		<b>BA and MMath in Mathematics</b><br/>
 		University of Cambridge, Oct. 2016 - Jun. 2020.
 	</div>
 </div>
