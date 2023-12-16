@@ -28,7 +28,7 @@ I am interested in topics in gravitational physics, including:
 * Gravitational Waves
 * Self-force and EMRIs
 
-My current research involves the development of frequency-domain methods for calculating the gravitational self-force in hyperbolic binary black hole encounters. My planned thesis title is "Frequency-domain approach to self-force in hyperbolic scattering" and Prof. Leor Barack (primary) and Dr Adam Pound (secondary) are my supervisors. Funding for my project is provided by EPSRC.
+My current research involves the development of frequency-domain methods for calculating the gravitational self-force during hyperbolic binary black hole encounters. My planned thesis title is "Frequency-domain approach to self-force in hyperbolic scattering" and Prof. Leor Barack (primary) and Dr Adam Pound (secondary) are my supervisors. Funding for my project is provided by EPSRC.
 
 Education
 ------
