@@ -12,4 +12,6 @@ Talk given to the 9th QCD meets Gravity meeting.
 
 [Slides](../files/qcd_meets_grav_23.pdf)
 
+[Video (external)](https://cds.cern.ch/record/2884206)
+
 [Event information (external)](https://indico.cern.ch/event/1317494/overview)
