@@ -24,7 +24,7 @@ author_profile: true
 	}
 </style>
 
-Details of my papers can also be found on [INSPIRE](https://inspirehep.net/authors/2660556?ui-citation-summary=true) and the [ADS](https://ui.adsabs.harvard.edu/search/q=author%3A%22Whittall%2C%20Christopher%22&sort=date%20desc%2C%20bibcode%20desc&p_=0).
+Details of my papers can also be found on [INSPIRE](https://inspirehep.net/authors/2750523?ui-citation-summary=true) and the [ADS](https://ui.adsabs.harvard.edu/search/q=author%3A%22Whittall%2C%20Christopher%22&sort=date%20desc%2C%20bibcode%20desc&p_=0).
 
 {% include base_path %}
 
