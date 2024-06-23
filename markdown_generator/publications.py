@@ -63,7 +63,7 @@ def html_escape(text):
 
 import os
 for row, item in publications.iterrows():
-    
+    print(item)
     md_filename = str(item.pub_date) + "-" + item.url_slug + ".md"
     html_filename = str(item.pub_date) + "-" + item.url_slug
     year = item.pub_date[:4]
@@ -94,17 +94,17 @@ for row, item in publications.iterrows():
     
     md += "\ncitation: '" + html_escape(item.citation) + "'"
     
-    if len(item.illustration) > 3:
+    if len(str(item.illustration)) > 3:
         md += "\nillustration: " + html_escape(item.illustration);
-    
-    if len(item.illustration2) > 3:
+
+    if len(str(item.illustration2)) > 3:
         md += "\nillustration2: " + html_escape(item.illustration2);
     
     md += "\n---"
     
     ## Markdown description for individual page
     
-    if len(item.illustration) > 3:
+    if len(str(item.illustration)) > 3:
         md += "\n<head>\n<style>\nimg {\n padding-right: 20px; \n}\n </style>\n</head>"
     
     if len(str(item.journal_url)) > 5:
@@ -120,10 +120,11 @@ for row, item in publications.iterrows():
         
     #md += "\nRecommended citation: " + item.citation
     
-    if len(item.illustration) > 3:
+    if len(str(item.illustration)) > 3:
         md += "\n<div>"
         md += f"\n<image style=\"float:left\" width=\"360\" height=\"360\" src=\"{item.illustration}\" />"
-        if len(item.illustration2) > 3:
+        
+        if len(str(item.illustration2)) > 3:
             md += f"\n<image style=\"float:left\" width=\"360\" height=\"360\" src=\"{item.illustration2}\" />"
         md += "\n</div>\n"
     
