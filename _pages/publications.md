@@ -7,6 +7,10 @@ author_profile: true
 
 <style>
     /* Define the styles for the columns */
+	.row{
+		display: flex;
+	}
+	
     .column1 {
         float: left;
         width: 25%; 
@@ -29,7 +33,8 @@ Details of my papers can also be found on [INSPIRE](https://inspirehep.net/autho
 {% include base_path %}
 
 {% for post in site.publications reversed %}
-<div>
+<div class = "row">
+	<div>
 	<div class="column1">
 		<div class="image-container">
 			<img src="{{post.illustration}}">
@@ -38,6 +43,7 @@ Details of my papers can also be found on [INSPIRE](https://inspirehep.net/autho
 	
 	<div class="column2">
 		{% include archive-single.html %}
+	</div>
 	</div>
 </div>
 
