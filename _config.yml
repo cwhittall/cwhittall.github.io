@@ -83,12 +83,12 @@ analytics:
 author:
   name             : "Chris Whittall"
   avatar           : "bio-photo.jpg"
-  bio              : "PhD student"
-  location         : "University of Southampton, UK"
+  bio              : "Postdoctoral researcher"
+  location         : "University of Birmingham, UK"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=NlO82Q8AAAAJ&hl=en&oi=sra"
-  email            : "c.l.whittall@soton.ac.uk"
+  email            : "c.l.whittall@bham.ac.uk"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
