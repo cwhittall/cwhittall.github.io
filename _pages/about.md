@@ -27,7 +27,7 @@ I am interested in topics in gravitational physics, including:
 * Gravitational Waves
 * Self-force and EMRIs
 
-I am currently researching methods to accelerate the evaluation of gravitational waveform templates for next-generation gravitational wave detectors.
+I am currently researching methods to accelerate the evaluation of gravitational waveform templates for next-generation gravitational wave detectors using reduced order modelling and artificial neural networks.
 
 I am also actively interested in gravitational self-force, and in particular its application to the problem of black hole <i>scattering</i>. My PhD research centred on the development of frequency-domain numerical methods for calculating the self-force during hyperbolic binary black hole encounters. My thesis was titled "Frequency-domain approach to self-force in hyperbolic scattering", and Prof. Leor Barack (primary) and Prof. Adam Pound (secondary) were my supervisors. Funding for that project was provided by EPSRC.
 
