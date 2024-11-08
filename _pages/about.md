@@ -31,6 +31,7 @@ I am currently researching methods to accelerate the evaluation of gravitational
 
 I am also actively interested in gravitational self-force, and in particular its application to the problem of black hole <i>scattering</i>. My PhD research centred on the development of frequency-domain numerical methods for calculating the self-force during hyperbolic binary black hole encounters. My thesis was titled "Frequency-domain approach to self-force in hyperbolic scattering", and Prof. Leor Barack (primary) and Prof. Adam Pound (secondary) were my supervisors. Funding for that project was provided by EPSRC.
 
+I am a member of the LIGO Scientific Collaboration, Einstein Telescope Collaboration, and associate member of the LISA Consortium.
 
 Academic Positions
 ------
