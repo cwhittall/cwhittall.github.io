@@ -7,17 +7,34 @@ author_profile: true
 <head>
     <style>
         img {
-            padding-right: 10px; 
+            padding-top: 10px; 
+			padding-bottom:0px;
         }
 		
 		blockquote  {
 			font-size: 0.9em !important;
-}
+		}
+		
+		figure {
+            display: inline-block; /* Keeps the image and caption together */
+            text-align: center;    /* Centers the caption below the image */
+            margin: 5px;         /* Adds space around the figure */
+        }
+
+        figcaption {
+            font-size: 0.75em;     /* Makes the font smaller for the caption */
+            color: #555;          /* Optional: sets a light gray color for the text */
+        }
     </style>
 	
 </head>
 
+<figure>
+        <img src="../images/bbh_merger_msoft_designer.png" alt="Binary black hole merger">
+        <figcaption>Merging black holes emit gravitational waves. Impression generated using Microsoft Designer AI.</figcaption>
+</figure>
 
+<div>
 <blockquote cite="https://eprints.soton.ac.uk/494760/">
 "Shortly before 5AM local time on the 14th September 2015, a small disturbance was
 noted at the LIGO facility in Livingston, Louisiana. The sophisticated instruments
@@ -28,6 +45,7 @@ same event 7ms later. Subsequent analysis would identify the origin of this dist
 as the merger of two black holes, with masses approximately 36 and 29 times that of
 the Sun, in a galaxy 1.3 billion light years away..." <i> from Chapter 1 of my <a href="https://eprints.soton.ac.uk/494760/">PhD thesis</a>.</i>
 </blockquote>
+</div>
 
 The landmark first direct detection of gravitational waves by the LIGO and Virgo collaborations in 2015 opened a unique window into the population of binary black holes and neutron stars in our universe, and the strong gravitational fields that surround them. This achievement -- and the continued success of gravitational wave astronomy -- rely critically on our ability to accurately predict the gravitational wave emission from astrophysical sources. You can read about my efforts in this area below:
 
