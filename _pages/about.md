@@ -15,23 +15,20 @@ redirect_from:
     </style>
 </head>
 
-
-
-
-My name is Chris Whittall and I am a postdoctoral research fellow at the University of Birmingham. 
+My name is Chris Whittall and I am a postdoctoral research fellow at the University of Birmingham Institute for Gravitational Wave Astronomy. 
 
 Research Interests
 ------
-I am interested in topics in gravitational physics, including: 
-* Black Holes
-* Gravitational Waves
+I am interested in topics in gravitational wave physics, particularly: 
+* Waveform modelling
 * Self-force and EMRIs
+* Surrogate modelling
 
 I am currently researching methods to accelerate the evaluation of gravitational waveform templates for next-generation gravitational wave detectors using reduced order modelling and artificial neural networks.
 
 I am also actively interested in gravitational self-force, and in particular its application to the problem of black hole <i>scattering</i>. My PhD research centred on the development of frequency-domain numerical methods for calculating the self-force during hyperbolic binary black hole encounters. My [thesis](https://eprints.soton.ac.uk/494760/) was titled "Frequency-domain approach to self-force in hyperbolic scattering", and Prof. Leor Barack (primary) and Prof. Adam Pound (secondary) were my supervisors. Funding for that project was provided by EPSRC.
 
-I am a member of the LIGO Scientific Collaboration, Einstein Telescope Collaboration, and associate member of the LISA Consortium.
+I am a member of the LIGO Scientific Collaboration, Einstein Telescope Collaboration, and core member of the LISA Consortium.
 
 Academic Positions
 ------
