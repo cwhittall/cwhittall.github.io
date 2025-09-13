@@ -5,14 +5,53 @@ permalink: /talks/
 author_profile: true
 ---
 
-{% if site.talkmap_link == true %}
+<style>
+  .row {
+    display: flex;
+    align-items: baseline;       /* aligns first lines of text */
+    border-bottom: 1px solid #aaa;  /* horizontal line below each row */
+    padding-top: 0.1em;    /* slightly smaller */
+	padding-bottom: 2.5em; /* slightly larger */
+  }
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+  .column1 {
+    width: 20%;
+    padding: 5px;
+  }
 
-{% endif %}
+  .column2 {
+    width: 80%;
+    padding: 5px;
+  }
+
+  .column1 > *:first-child,
+  .column2 > *:first-child {
+    margin-top: 0;
+  }
+
+  .column1 p,
+  .column2 p {
+    margin: 0;
+  }
+
+  .column1 p + p,
+  .column2 p + p {
+    margin-top: 0.2em;
+  }
+</style>
 
 Below is a list of talks I have given about my research. Click the links for more information, including slides.
 
 {% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
+  <div class="row">
+    <!-- Left hand column: talk type and date -->
+    <div class="column1">
+      {% include archive-talk-details-left.html %}
+    </div>
+
+    <!-- Right hand column: talk name and venue -->
+    <div class="column2">
+      {% include archive-talk-details-right.html %}
+    </div>
+  </div>
 {% endfor %}
