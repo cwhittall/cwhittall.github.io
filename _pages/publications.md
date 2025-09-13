@@ -8,7 +8,7 @@ author_profile: true
 <style>
   .row {
     display: flex;
-    align-items: flex-start;       /* aligns first lines of text */
+    align-items: baseline;      /* aligns first lines of text */
     border-bottom: 1px solid #aaa;  /* horizontal line below each row */
     padding-top: 0.1em;    /* slightly smaller */
 	padding-bottom: 2.5em; /* slightly larger */
@@ -29,21 +29,12 @@ author_profile: true
     margin-top: 0;
   }
 
-  .column1 p,
-  .column2 p {
-    margin: 0;
-  }
-
-  .column1 p + p,
-  .column2 p + p {
-    margin-top: 0.2em;
-  }
   
 	.image-container {
-		padding-top:75px;
+		padding-top:25px;
 		padding-right: 15px;
-		padding-bottom: 15px;
-		padding-left: 15px;
+		padding-bottom: 10px;
+		padding-left: 0px;
 	}
 </style>
 
@@ -55,6 +46,8 @@ Details of my papers can also be found on [INSPIRE](https://inspirehep.net/autho
 {% for post in site.publications reversed %}
 <div class = "row">
 	<div class="column1">
+		<b> {{ post.venue }} </b><br>
+		{{ post.venue_date | date: '%B %Y' }} 
 		<div class="image-container">
 			<img src="{{post.illustration}}">
 		</div>
