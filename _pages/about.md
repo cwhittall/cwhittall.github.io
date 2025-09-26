@@ -19,9 +19,9 @@ My name is Chris Whittall and I am a postdoctoral research fellow at the Univers
 
 Research Interests
 ------
-I am interested in topics in gravitational wave physics, particularly: 
-* Waveform modelling
-* Self-force and EMRIs
+I am interested in topics in gravitational wave physics, especially waveform modelling for relativistic compact binaries. My areas of expertise include: 
+* Gravitational self-force
+* Gravitational scattering
 * Surrogate modelling
 
 I am currently researching methods to accelerate the evaluation of gravitational waveform templates for next-generation gravitational wave detectors using reduced order modelling and artificial neural networks.
