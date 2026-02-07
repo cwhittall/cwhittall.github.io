@@ -104,6 +104,9 @@ for row, item in publications.iterrows():
     if len(str(item.illustration2)) > 3:
         md += "\nillustration2: " + html_escape(item.illustration2);
     
+    if len(str(item.featured)) > 3:
+        md += "\nfeatured: " + str(item.featured);
+    
     md += "\n---"
     
     ## Markdown description for individual page

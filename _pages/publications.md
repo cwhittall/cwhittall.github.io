@@ -41,9 +41,13 @@ author_profile: true
 
 Details of my papers can also be found on [INSPIRE](https://inspirehep.net/authors/2750523?ui-citation-summary=true) and the [ADS](https://ui.adsabs.harvard.edu/search/q=author%3A%22Whittall%2C%20Christopher%22&sort=date%20desc%2C%20bibcode%20desc&p_=0).
 
+
+## Featured publications
+---
 {% include base_path %}
 
 {% for post in site.publications reversed %}
+{% if post.featured == true %}
 <div class = "row">
 	<div class="column1">
 		<b> {{ post.venue }} </b><br>
@@ -57,6 +61,20 @@ Details of my papers can also be found on [INSPIRE](https://inspirehep.net/autho
 		{% include archive-single.html %}
 	</div>
 </div>
-
+{% endif %}
 {% endfor %}
 
+## Other publications
+---
+<ul>
+{% for post in site.publications reversed %}
+{% if post.featured == false %}
+	<li>
+		{{ post.citation }} 
+		{% if post.paperurl %}
+			<a href="{{ post.paperurl | relative_url }}">[link]</a>
+		{% endif %}
+	</li>
+{% endif %}
+{% endfor %}
+</ul>
