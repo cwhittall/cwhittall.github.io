@@ -15,7 +15,7 @@ redirect_from:
     </style>
 </head>
 
-My name is Chris Whittall and I am a postdoctoral research fellow at the University of Birmingham Institute for Gravitational Wave Astronomy. 
+My name is Chris Whittall and I am a postdoctoral research fellow in the gravity group at the University of Southampton. 
 
 Research Interests
 ------
@@ -24,19 +24,27 @@ I am interested in topics in gravitational wave physics, especially waveform mod
 * Gravitational scattering
 * Surrogate modelling
 
-I am currently researching methods to accelerate the evaluation of gravitational waveform templates for next-generation gravitational wave detectors using reduced order modelling and artificial neural networks.
+I am currently involved in efforts to model mass-asymmetric binaries accurately through adiabatic and first post-adiabatic order using the gravitational self-force framework. I am also actively interested in the problem of black hole <i>scattering</i>, building off my PhD research centred on the development of frequency-domain numerical techniques to calculate the self-force during hyperbolic binary black hole encounters.
 
-I am also actively interested in gravitational self-force, and in particular its application to the problem of black hole <i>scattering</i>. My PhD research centred on the development of frequency-domain numerical methods for calculating the self-force during hyperbolic binary black hole encounters. My [thesis](https://eprints.soton.ac.uk/494760/) was titled "Frequency-domain approach to self-force in hyperbolic scattering", and Prof. Leor Barack (primary) and Prof. Adam Pound (secondary) were my supervisors. Funding for that project was provided by EPSRC.
+I was previously a postdoc at the Insitute for Gravitational Wave Astronomy in Birmingham, during which time I developed SEOBNRv5PHM_NNSur7dq10, a GPU-accelerated reduced-order surrogate of the precessing SEOBNRv5PHM waveform model, utilising artificial neural networks for parameter space interpolation.
 
-I am a member of the LIGO Scientific Collaboration, Einstein Telescope Collaboration, and core member of the LISA Consortium.
+I am a core member of the LISA Consortium, member of the Einstein Telescope Collaboration, and former member of the LIGO Scientific Collaboration.
 
 Academic Positions
 ------
 <div>
+	<image style="float:left" width="75" height="75" src="images/uni_of_soton.png" />
+	<div>
+		<b>Postdoctoral Research Fellow</b><br/>
+		University of Southampton, Apr.	2026 - Present.
+	</div>
+</div>
+<p></p>
+<div>
 	<image style="float:left" width="75" height="75" src="images/uni_of_bham.png" />
 	<div>
 		<b>Postdoctoral Research Fellow</b><br/>
-		University of Birmingham, Sep. 2024 - Present.
+		University of Birmingham, Sep. 2024 - Mar. 2026.
 	</div>
 </div>
 
