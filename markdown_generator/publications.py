@@ -69,7 +69,7 @@ for row, item in publications.iterrows():
     year = item.pub_date[:4]
     
     if len(str(item.arxiv_id)) > 3:
-        arxiv_url = f"https://arxiv.org/abs/{item.arxiv_id}";
+        arxiv_url = f"https://arxiv.org/abs/{item.arxiv_id:.5f}";
         arxiv_str = f"arXiv:{item.arxiv_id}";
 
     ## YAML variables
